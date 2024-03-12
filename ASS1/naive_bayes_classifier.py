@@ -7,6 +7,7 @@
 # Importing necessary libraries
 import numpy as np
 import pandas as pd
+from math import log
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from collections import defaultdict
@@ -67,17 +68,13 @@ class NaiveBayesClassifier:
     def predict(self, X):
         predictions = []
         for x in X:
-            # save the value of x in a file
-            # open("x.txt", "a").write(str(x))
             class_scores = {
-                c: self.class_probabilities[c] for c in self.classes
+                c: log(self.class_probabilities[c]) for c in self.classes
             }
-            for feature, value in enumerate(x):
-                # print("Feature:", feature, "Value:", value)
-                for c in self.classes:
-                    # print(self.feature_probabilities[c]);
+            for c in self.classes:
+                for feature, value in enumerate(x):
                     if (feature, value) in self.feature_probabilities[c]:
-                        class_scores[c] += self.feature_probabilities[c][feature, value]
+                        class_scores[c] += log(self.feature_probabilities[c][feature, value])
             predicted_class = max(class_scores, key=class_scores.get)
             predictions.append(predicted_class)
         return predictions
