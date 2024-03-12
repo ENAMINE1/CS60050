@@ -68,5 +68,5 @@ The script will load the dataset, preprocess it, train the custom Naive Bayes Cl
 ## Support
 
 For any questions or issues, please contact 
-- [Shashwat Kumar](kshashwat.iit@gmail.com).
-- [Debraj Das](susmita834805@gmail.com)
+- [Shashwat Kumar](mailto:kshashwat.iit@gmail.com).
+- [Debraj Das](mailto:susmita834805@gmail.com)
