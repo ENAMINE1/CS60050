@@ -17,7 +17,3 @@ This repository contains assignments for the course CS60050 Machine Learning tau
 - Professor: [Aritra Hazra](https://cse.iitkgp.ac.in/~aritrah/)
 - Semester: Spring 2024
 - Institution: [Indian Institute of Technology Kharagpur (IIT KGP)](https://www.iitkgp.ac.in/)
-
-## Note:
-- Please refer to the respective folders for the assignment details and materials.
-- For any queries regarding the assignments or the course, feel free to contact the course instructor or teaching assistants.
